@@ -1,0 +1,38 @@
+// @use '../components/internal/skeleton/skeleton.scss';
+// @use './scroll.scss';
+// @use '../components/internal/search-bar/search-bar.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.roll:nth-child(odd) {
+	background-color: #1a202c;
+}
+
+.sliding-con::-webkit-scrollbar {
+	width: 0.5em;
+	background: transparent;
+}
+
+.sliding-con::-webkit-scrollbar-track {
+	background: #1e1f31;
+}
+
+.sliding-con::-webkit-scrollbar-thumb {
+	background: #3f4054;
+	border-radius: 10px;
+}
+
+#chart {
+	margin-left: -30px;
+	margin-top: -30px;
+}
+
+// deactivate google auto fill styles
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+}
